@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/graphik-bold.otf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 html {
   @media (max-width: 1080px) {
     font-size: 93.75%; // 15px
@@ -15,10 +23,13 @@ html {
 }
 
 :root {
-  --background: #f5f6fa;
+  --background: #19191b;
 
-  --primary: #373D4F;
-  --secondary: #9098AE;
+  --primary: #ffff;
+  --secondary: rgba(255, 255, 255, 0.7);
+  --black: #1e1e2080;
+  --link: #5454d4;
+
 }
 
 body {
@@ -27,7 +38,7 @@ body {
 
 body, button, textarea, input {
   color: var(--primary);
-  font: 400 1rem "Roboto", sans-serif;
+  font: 400 1rem "Nunito Sans", sans-serif;
 }
 
 a {
@@ -41,4 +52,9 @@ button {
   &:hover {
     cursor: pointer;
   }
+}
+
+h1 {
+  font-family: 'Graphik';
+  font-weight: bold;
 }
