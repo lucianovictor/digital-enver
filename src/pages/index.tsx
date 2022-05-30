@@ -1,24 +1,16 @@
+import { IconCircles } from 'assets'
 import Head from 'next/head'
-import { GetStaticProps } from 'next'
-
-import styles from 'styles/home.module.scss'
-
-type HomeProps = {
-  title: string
-}
-
-export default function Home({ title }: HomeProps) {
+// import styles from 'styles/home.module.scss'
+export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>NextJS Boilerplate</title>
+        <title>Digital Agency Enver</title>
       </Head>
-      <h1>{title}</h1>
-    </div>
-  )
-}
 
-export const getStaticProps: GetStaticProps = async () => {
-  const title = 'NextJS Boilerplate'
-  return { props: { title } }
+      <h1>
+        Ola <IconCircles />
+      </h1>
+    </>
+  )
 }
