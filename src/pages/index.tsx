@@ -1,6 +1,7 @@
+import Head from 'next/head'
 import { Header } from 'components/Header'
 import { BannerHero } from 'components/BannerHero'
-import Head from 'next/head'
+import { Presentation } from 'components/Presentation'
 
 import styles from 'styles/home.module.scss'
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <Header />
       <BannerHero />
+      <Presentation />
     </div>
   )
 }
