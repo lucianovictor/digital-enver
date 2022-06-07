@@ -1,4 +1,5 @@
 import { IconPlay } from 'assets'
+
 import styles from './styles.module.scss'
 
 export const Presentation = () => (
@@ -12,6 +13,7 @@ export const Presentation = () => (
         </p>
       </div>
       <div className={styles.video}>
+        <img src="/cover-video.png" alt="" />
         <button type="button">
           <IconPlay />
         </button>
