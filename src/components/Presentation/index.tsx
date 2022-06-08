@@ -3,7 +3,7 @@ import { IconPlay } from 'assets'
 import styles from './styles.module.scss'
 
 export const Presentation = () => (
-  <section className={styles.container}>
+  <section>
     <div>
       <div className={styles.text}>
         <h1>Why Enver Is The Best Choice?</h1>
