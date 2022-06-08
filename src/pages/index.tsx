@@ -6,6 +6,7 @@ import { Services } from 'components/Services'
 import { Portfolio } from 'components/Portfolio'
 
 import styles from 'styles/home.module.scss'
+import { Contact } from 'components/Contact'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Presentation />
       <Services />
       <Portfolio />
+      <Contact />
     </div>
   )
 }
