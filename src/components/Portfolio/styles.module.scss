@@ -1,0 +1,28 @@
+.title {
+  font-size: 3.625rem;
+  line-height: 5rem;
+  font-weight: 800;
+  font-family: 'Nunito Sans';
+
+  margin-bottom: 70px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+  height: 420px;
+
+  img {
+    width: 336px;
+    height: 254px;
+
+    &:nth-child(2) {
+      align-self: center;
+    }
+
+    &:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}
