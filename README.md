@@ -16,7 +16,7 @@ Dependências usadas no projeto:
 
 Também foram adicionados as ferramentas [**ESLint**](https://eslint.org/) e [**Prettier**](https://prettier.io/) para aumentar a produtividade e auxiliar a manter um padrão de código.
 
-## 📥 Instalação e execução
+## 📦 Instalação e execução
 
 Faça um clone desse repositório e acesse o diretório.
 
