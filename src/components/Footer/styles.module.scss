@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0 100px;
+
+  img {
+    width: 132px;
+    height: auto;
+  }
+
+  h6 {
+    font-size: 1rem;
+    line-height: 2.375rem;
+    color: var(--secondary);
+    font-weight: 400;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 40px;
+
+  li a {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--secondary);
+  }
+}
