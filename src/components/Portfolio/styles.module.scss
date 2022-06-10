@@ -1,3 +1,10 @@
+.background {
+  background-image: url('../../../public/icons/circles-1.png'), url('../../../public/icons/line.png');
+  background-size: 84px, 92px;
+  background-repeat: no-repeat;
+  background-position: right 120px, 70px bottom;
+}
+
 .title {
   font-size: 3.625rem;
   line-height: 5rem;
@@ -8,10 +15,13 @@
 }
 
 .projects {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
-  margin-bottom: 120px;
   height: 420px;
+
+  margin-bottom: 120px;
 
   img {
     width: 336px;
