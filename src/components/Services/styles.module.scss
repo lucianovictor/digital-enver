@@ -5,10 +5,17 @@
   align-items: center;
   row-gap: 98px;
 
+  background-image: url('/icons/triangles.png'), url('/icons/add-1.png');
+  background-size: 105px, 45px;
+  background-repeat: no-repeat;
+  background-position: top left, right 100px;
+
   h1 {
     font-size: 3.75rem;
     line-height: 4.375rem;
     text-align: center;
+    width: 100%;
+    max-width: 695px;
   }
 }
 
