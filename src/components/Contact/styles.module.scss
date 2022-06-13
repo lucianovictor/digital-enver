@@ -21,6 +21,12 @@
     line-height: 4.125rem;
     width: 100%;
     max-width: 826px;
+
+    @media(max-width:1080px) {
+      font-size: 3rem;
+      line-height: 3.25rem;
+      max-width: 600px;
+    }
   }
 
   button {
