@@ -12,6 +12,10 @@
       max-width: 1200px;
       margin: 0 auto;
     }
+
+    @media(max-width:1260px) {
+      padding: 0 24px;
+    }
   }
 
   section:not(:nth-child(2)) {
