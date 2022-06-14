@@ -9,7 +9,11 @@ export const Header = () => {
       <div className={styles.container}>
         <img src="/logo.svg" alt="Logo da agência Enver" />
         <nav>
-          <ul className={styles.navigation}>
+          <ul
+            className={`${styles.navigation} ${
+              activeToggle ? styles.active : ''
+            }`}
+          >
             <li className={styles.active}>Home</li>
             <li>Services</li>
             <li>Our Project</li>
