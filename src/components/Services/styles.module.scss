@@ -14,8 +14,31 @@
     font-size: 3.75rem;
     line-height: 4.375rem;
     text-align: center;
+
     width: 100%;
     max-width: 695px;
+  }
+
+  @media(max-width: 768px) {
+    row-gap: 64px;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+      max-width: 500px;
+    }
+  }
+
+  @media(max-width: 650px) {
+    row-gap: 50px;
+
+    background-size: 70px, 45px;
+
+    h1 {
+      font-size: 2.25rem;
+      line-height: 3rem;
+      max-width: 300px;
+    }
   }
 }
 
@@ -24,6 +47,15 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 60px 20px;
   width: 100%;
+
+  @media(max-width: 768px) {
+    gap: 48px 16px;
+  }
+
+  @media(max-width: 768px) {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .service {
@@ -96,6 +128,28 @@
 
     &[data-color="red"] {
       background: rgba(240, 64, 55, 0.05);
+    }
+  }
+
+  @media(max-width: 768px) {
+    padding: 16px 6px;
+
+    strong {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      max-width: 100%;
+    }
+  }
+
+  @media(max-width: 650px) {
+    p {
+      font-size: 1rem;
     }
   }
 }
