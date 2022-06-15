@@ -3,6 +3,11 @@
   background-size: 84px, 92px;
   background-repeat: no-repeat;
   background-position: right 120px, 70px bottom;
+
+  @media(max-width: 650px) {
+    background-size: 60px;
+    background-position: right 30px, 30px 400px;
+  }
 }
 
 .title {
@@ -12,13 +17,24 @@
   font-family: 'Nunito Sans';
 
   margin-bottom: 70px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 44px;
+  }
+
+  @media(max-width: 650px) {
+    font-size: 2.25rem;
+    line-height: 3rem;
+
+    margin-bottom: 32px;
+  }
 }
 
 .projects {
-  width: 100%;
-
   display: flex;
   justify-content: space-between;
+
+  width: 100%;
   height: 420px;
 
   margin-bottom: 120px;
@@ -35,4 +51,75 @@
       align-self: flex-end;
     }
   }
+
+  @media(max-width: 768px) {
+    position: relative;
+    justify-content: center;
+
+    width: 100%;
+    height: 320px;
+    margin-bottom: 24px;
+
+    img {
+      position: absolute;
+      inset: 0;
+
+      width: auto;
+      height: 320px;
+
+      margin: auto;
+      opacity: 0;
+
+      transition: all 1s;
+
+      &.active {
+        z-index: 2;
+        opacity: 1;
+      }
+    }
+  }
+
+  @media(max-width: 650px) {
+    height: 250px;
+
+    img {
+      height: 250px;
+    }
+  }
 }
+
+.controller {
+  display: none;
+  visibility: hidden;
+
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  @media(max-width: 768px) {
+    display: flex;
+    visibility: visible;
+  }
+
+  button {
+    display: flex;
+
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--link);
+
+    svg {
+      margin: auto;
+      width: 24px;
+      height: auto;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+}
+
